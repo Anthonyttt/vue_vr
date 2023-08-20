@@ -4,7 +4,7 @@
             <h5 class="title">点位总览</h5>
             <el-menu
             class="el-menu"
-            background-color="#E7F2FFFF"
+            background-color="#FFFFFFFF"
             unique-opened
             >
                 <el-sub-menu index="1">
@@ -133,7 +133,8 @@ export default{
 }
 </script>
 
-<style scoped>
+<style lang="scss">
+
 .title{
     padding-left: 20px;
     font-size: 20px;

@@ -1,9 +1,8 @@
 <template>
     <el-config-provider :locale="locale">
-        <div style="display:flex;flex-direction: row;justify-content: space-between;align-items: center;">
-            <div class="line"></div>
-            <div class="title">客房预定</div>
-            <div class="line"></div>
+        <div style="display: flex;flex-direction: row;height: 20px;">
+            <el-icon :size="16" color="rgba(23, 127, 255, 1)" style="height:16px"><LocationFilled /></el-icon>
+            <p style="margin-left:8px;font-size: 12px;color:rgba(69, 88, 115, 1);line-height: 16px;">浙江，杭州，余杭区，黄湖镇，青山村石扶梯水库旁莫干山南坡</p>
         </div>
         <el-date-picker
         v-model="value1"
@@ -41,11 +40,6 @@ import zhCn from 'element-plus/lib/locale/lang/zh-cn';
 import { ref } from 'vue';
 // import func from 'vue-editor-bridge';
 
-const room=[
-    {name:"依水观山大床房",price:819,url:require("../assets/ysbs.jpg"),configuration:"包含两份早餐，拥有极佳的观景位置，1.8米大床柔软舒适，房内有免费瓶装水、小食，独立卫浴全天供应热水，洗漱用品齐全。 ",bed:"1.8米大床",tag:"双早 | 免费瓶装水、小食",belongto:82},
-    {name:"临溪童趣亲子房",price:910,url:require("../assets/lxtq.jpg"),configuration:"包含四份早餐，房间临溪便于孩童玩耍，两张1.2米单人床，一张1米上下铺，房内有免费瓶装水、小食，独立卫浴全天供应热水，洗漱用品齐全。",bed:"两张1.2米单人床,一张1米上下铺",tag:"四早 | 免费瓶装水、小食",belongto:82},
-    {name:"品茗榻榻米双床房",price:910,url:require("../assets/pmttm.jpg"),configuration:"包含两份早餐，两张1.2米单人床，拥有露台可以赏山中美景，房内有免费瓶装水、小食，独立卫浴全天供应热水，洗漱用品齐全。",bed:"两张1.2米单人床",tag:"双早 | 免费瓶装水",belongto:82},
-];
 
 var tDate=new Date();
 const startDate=new Date();

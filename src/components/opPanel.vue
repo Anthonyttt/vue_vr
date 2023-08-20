@@ -133,13 +133,12 @@ export default{
   height: 85vh;
   margin-left: 10px;
   border-radius: 25px;
-  padding: 20px;
-  background: #E7F2FFFF;
+  background:white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: scroll;
-  overflow-x: scroll;
+  /* overflow-y: scroll;
+  overflow-x: scroll; */
 }
 .switchButton{
     display: flex;
