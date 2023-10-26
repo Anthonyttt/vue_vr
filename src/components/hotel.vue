@@ -19,7 +19,16 @@
             <el-col :span="8"><el-image :src="r.url" :fit="contain" style="border-radius: 5px;"></el-image></el-col>
             <el-col :span="10" :offset="1">
                 <div style="height:100%;display: flex;flex-direction: column;justify-content: space-between;">
-                    <text class="roomTitle">{{ r.name }}</text>
+                    <el-popover
+                        placement="top-start"
+                        trigger="hover"
+                        effect="dark"
+                        :width="150"
+                        content="参观房间">
+                        <template #reference>
+                            <button class="roomTitle" @click="visitHome">{{ r.name }}</button>
+                        </template>
+                    </el-popover>
                     <text class="roomBed">{{ r.bed }}</text>
                     <text class="roomIn">{{ r.tag }}</text>
                 </div>
@@ -27,7 +36,7 @@
             <el-col :span="2" :offset="2">
                 <div style="height: 100%;display: flex;flex-direction: column;align-items: center;justify-content: space-between;">
                     <div class="roomPrice">{{ "￥"+r.price }}</div>
-                    <div class="dLog">订</div>
+                    <el-button class="dLog">订</el-button>
                 </div>
             </el-col>
         </el-row>
@@ -70,6 +79,9 @@ export default{
         }
     },
     methods:{
+        visitHome(){
+            this.$emit('visitHome',35);
+        },
         async getRoom(){
             let t=null;
             console.log(this.belongto);
@@ -99,7 +111,10 @@ export default{
 .roomTitle{
     font-size: 14px;
     font-weight: 700;
-    
+    width:130px;
+    background-color: white;
+    border: 0px;
+    cursor:pointer;
 }
 .roomBed{
     font-size: 10px;

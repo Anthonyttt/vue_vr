@@ -3,6 +3,7 @@ import { createRouter, createWebHistory,createWebHashHistory } from 'vue-router'
 import homePage from '../views/homeView.vue';
 import panoPage from '../views/panoView.vue';
 import scanPage from '../views/scanView.vue';
+import testPage from '../views/test.vue';
 
 
 const routes = [
@@ -20,6 +21,11 @@ const routes = [
     path:'/scanPage',
     name:'scanPage',
     component:scanPage
+  },
+  {
+    path:'/testPage',
+    name:'testPage',
+    component:testPage
   }
 ]
 

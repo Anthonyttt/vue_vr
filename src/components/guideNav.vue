@@ -4,7 +4,8 @@
             <h5 class="title">点位总览</h5>
             <el-menu
             class="el-menu"
-            background-color="#FFFFFFFF"
+            default-active="2"
+            color="#2A82E4"
             unique-opened
             >
                 <el-sub-menu index="1">
@@ -146,8 +147,4 @@ export default{
     justify-content: space-between;
     overflow:auto;
 }
-.el-menu{
-    
-}
-
 </style>

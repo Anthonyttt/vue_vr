@@ -3,10 +3,7 @@
       <pano class="vrWin" :placeURL="defaultPU" :Markers="defaultM" :dLL="defaultLL" @transfer="changePlace" @switch="switchPanel" v-if="updateDate"></pano>
       <div class="guideNav">
         <gNav :Markers="markerForShow" @transfer="getChangePlace" v-if="guideShow"></gNav>
-        <bNav :Title="pointTitle" :Introduce="pointIntroduce" :comType="typeNum" :pushId="pushId" v-if="buyShow"></bNav>
-        <div class="switchButton">
-            <el-button @click="test()"><el-icon size="25"><Fold /></el-icon></el-button>
-        </div>
+        <bNav :Title="pointTitle" :Introduce="pointIntroduce" :comType="typeNum" :pushId="pushId" v-if="buyShow" @isChange="switchNav" @visitHome="changePlace"></bNav>
       </div>
   </div>
 </template>
@@ -38,13 +35,17 @@ export default{
       pointTitle:"",
       pointIntroduce:"",
       typeNum:0,
-      pushId:0
+      pushId:0,
+      nameList:[]
     }
   },
   created:function(){
     this.$data.defaultPU=this.getvrPhoto(1);
     this.$data.markerForShow=this.filMarkers();
     this.$data.defaultM=this.getDefaultM(1);
+  },
+  mounted(){
+
   },
   methods:{
     async getChangePlace(p){
@@ -67,6 +68,10 @@ export default{
       setTimeout(()=>{
         this.updateDate=true;
       },0)
+    },
+    switchNav(flag){
+      this.guideShow=true;
+      this.buyShow=false;
     },
     async switchPanel(id){
       this.guideShow=false;
@@ -107,7 +112,7 @@ export default{
         t=res.data.data;
       })
       return t;
-    }
+    },
   }
 }
 
@@ -122,16 +127,17 @@ export default{
   height: 90vh;
 }
 .vrWin{
-  widows: 65%;
+  width: 100vw;
   height: 85vh;
-  border-radius: 25px;
-  padding: 20px;
-  background: #E7F2FFFF;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 1);
+  border: 2px solid rgba(13, 97, 253, 1);
+  overflow: hidden;
 }
 .guideNav{
   width:35%;
-  height: 85vh;
-  margin-left: 10px;
+  height: 100vh;
+  margin-left: 40px;
   border-radius: 25px;
   background:white;
   display: flex;

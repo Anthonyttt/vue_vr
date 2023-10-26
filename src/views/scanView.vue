@@ -1,14 +1,14 @@
 <template>
     <div>page2</div>
-    <t></t>
+    <ar></ar>
 </template>
 
 <script>
-import t from "../components/test.vue";
+import ar from "../components/ar.vue";
 
 export default{
     components:{
-        t
+        ar
     }
 }
 </script>

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve --port 5550",
+    "serve": "vue-cli-service serve --port 5550 ",
     "build": "vue-cli-service build"
   },
   "dependencies": {
@@ -23,6 +23,7 @@
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "node-sass": "^9.0.0",
+    "obj-loader": "^0.0.5",
     "sass": "^1.66.1",
     "sass-loader": "^13.3.2"
   },

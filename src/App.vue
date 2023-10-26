@@ -1,21 +1,13 @@
 <template>
   <div class="app">
-    <el-container class="boxOut">
-      <el-container id="container">
-        <el-aside width="270">
-          <asideNav></asideNav>
-        </el-aside>
-        <el-main>
-          <router-view></router-view>
-        </el-main>
-      </el-container>
-    </el-container>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import showWin from './components/opPanel.vue';
 import asideNav from './components/asideNav.vue';
+
 
 export default{
   name:"App",
@@ -33,15 +25,8 @@ html,body{
   border: 0;
   padding:0;
 }
-el-container{
-  height: 100vh;
-  border:1px solid #eee;
-  margin:0;
-  padding:0;
-
-}
-el-aside{
-  width:200px;
+.app{
+  padding:15px 60px
 }
 
 #container{

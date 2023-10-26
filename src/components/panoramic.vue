@@ -170,8 +170,7 @@ export default{
 </script>
 <style>
 #viewer{
-    width: 100%!important;
+    width: 100vw!important;
     height: 85vh!important;
-    background: #E7F2FFFF;
 }
 </style>
