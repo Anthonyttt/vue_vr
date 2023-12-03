@@ -1,20 +1,20 @@
 <template>
     <div class="head">
         <img class="logo" src="../assets/logo/logo.png" @click="back">
-        <text class="title" @click="back">恣游</text>
-        <div style="display: flex;flex-direction: column;margin-left: 250px;">
-            <!-- <el-autocomplete
-                v-model="nameSearch"
-                :fetch-suggestions="querySearch"
-                :trigger-on-focus="false"   
-                clearable
-                placeholder="请输入..."
-                class="searchBox"
-                @select="handleSelect"
-            /> -->
-            <input type="text" class="searchBox" placeholder="请输入...">
-        </div>
-        <button class="searchButton"><el-icon color="#ffffff" size="25"><Search /></el-icon></button>
+        <text class="title" @click="back" >非遗博物馆</text>
+<!--        <div style="display: flex;flex-direction: column;margin-left: 250px;">-->
+<!--            &lt;!&ndash; <el-autocomplete-->
+<!--                v-model="nameSearch"-->
+<!--                :fetch-suggestions="querySearch"-->
+<!--                :trigger-on-focus="false"   -->
+<!--                clearable-->
+<!--                placeholder="请输入..."-->
+<!--                class="searchBox"-->
+<!--                @select="handleSelect"-->
+<!--            /> &ndash;&gt;-->
+<!--            <input type="text" class="searchBox" placeholder="请输入...">-->
+<!--        </div>-->
+<!--        <button class="searchButton"><el-icon color="#ffffff" size="25"><Search /></el-icon></button>-->
     </div>
     <pano></pano>
 </template>
@@ -107,12 +107,12 @@ export default{
     cursor: pointer;
 }
 .title{
-    color:rgba(140, 183, 245, 1);
+    color:#7b562c;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 26px;
     font-weight: 900;
     line-height: 50px;
-    width: 60px;
+    //width: 10em;
     text-align: center;
     cursor: pointer;
 }
@@ -122,7 +122,7 @@ export default{
     border-radius: 16px 0px 0px 16px;
     background:  rgba(255, 255, 255, 1);
     box-shadow: 3px 3px 7px  rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(13, 97, 253, 1);
+    border: 1px solid #7b562c;
     text-indent: 10px;
     font-size: 16px;
 }
@@ -130,7 +130,7 @@ export default{
     height: 51px;
     width: 100px;
     border-radius: 0px 15px 15px 0px;
-    background: rgba(13, 110, 253, 1);
+    background: #7b562c;
     box-shadow: 3px 3px 7px  rgba(0, 0, 0, 0.25);
     border: 0px;
 }

@@ -82,7 +82,7 @@ const handleClose = (key, keyPath) => {
 
 .foldButton{
   color: rgba(48, 134, 240, 1);
-  height: 20;
-  width:20;
+  //height: 20;
+  //width:20;
 }
 </style>

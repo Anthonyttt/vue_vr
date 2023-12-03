@@ -128,8 +128,12 @@ export default{
                         svgStyle:{
                             fill:fillColor,
                             stroke:strokeColor,
-                            strokeWidth:strokeWidth
+                            strokeWidth:strokeWidth,
+                            image:"assets/logo/logo.png"
                         },
+                        // position: { yaw: '45deg', pitch: '0deg' },
+                        // image:"assets/logo/logo.png",
+                        // size: { width: 32, height: 32 },
                         latitude:m.latitude,
                         longitude:m.longitude,
                         visible:true,
@@ -147,8 +151,12 @@ export default{
                         svgStyle:{
                             fill:strokeColor,
                             stroke:fillColor,
-                            strokeWidth:strokeWidth
+                            strokeWidth:strokeWidth,
+                            image:"assets/logo/logo.png"
                         },
+                        // position: { yaw: '45deg', pitch: '0deg' },
+                        // image:"assets/logo/logo.png",
+                        // size: { width: 32, height: 32 },
                         latitude:m.latitude,
                         longitude:m.longitude,
                         visible:true,

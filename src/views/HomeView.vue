@@ -209,7 +209,7 @@ export default{
     padding:10px 0px;
 }
 .bottom{
-    height: 180;
+    height: 180px;
     width: 100%;
     padding:0px 70px;
     display: flex;

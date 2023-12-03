@@ -1,8 +1,8 @@
 <template>
     <div id="scanBox">
-      <div class="arjs-loader">
-        <div>正在加载AR模型，请稍候...</div>
-      </div>
+<!--      <div class="arjs-loader">-->
+<!--        <div>正在加载AR模型，请稍候...</div>-->
+<!--      </div>-->
       <a-scene
         class="sceneBox"
         vr-mode-ui="enabled: false;"

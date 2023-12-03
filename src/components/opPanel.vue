@@ -40,9 +40,9 @@ export default{
     }
   },
   created:function(){
-    this.$data.defaultPU=this.getvrPhoto(1);
+    this.$data.defaultPU=this.getvrPhoto(13);
     this.$data.markerForShow=this.filMarkers();
-    this.$data.defaultM=this.getDefaultM(1);
+    this.$data.defaultM=this.getDefaultM(13);
   },
   mounted(){
 
@@ -131,7 +131,7 @@ export default{
   height: 85vh;
   border-radius: 16px;
   background: rgba(255, 255, 255, 1);
-  border: 2px solid rgba(13, 97, 253, 1);
+  border: 2px solid #7b562c;
   overflow: hidden;
 }
 .guideNav{
