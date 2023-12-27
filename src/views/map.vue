@@ -76,7 +76,7 @@ export default defineComponent({
 
 <style scoped>
 .map{
-  //text-align: center;
+  text-align: center;
   height: 110vh;
 }
 .map .background{
@@ -88,30 +88,30 @@ export default defineComponent({
   background-size: 100% 100%;
 }
 .word{
-  margin: 46% 50.1%;
+  margin: 48% 50.1%;
   height: 15%;
   width: 3%;
-  //background-color: #7b562c;
+  background-color: #7b562c;
   background: url("@/assets/非遗/字.png");
   background-size: 100% 100%;
   position: absolute;
 }
 .lib{
   position: absolute;
-  margin: 35% 50%;
+  margin: 40% 50%;
   height: 40%;
   width: 25%;
-  //background-color: #7b562c;
+  /* //background-color: #7b562c; */
   background: url("@/assets/非遗/博物馆.png");
   background-size: 100% 100%;
 }
 .lib:hover{
   cursor:pointer;
-  margin: 30% 45%;
+  margin: 40% 45%;
   height: 55%;
   width: 35%;
-  //background-size: 130% 130%;
-  //margin: 0 0;
+  /* //background-size: 130% 130%; */
+  /* //margin: 0 0; */
 }
 
 .head{
